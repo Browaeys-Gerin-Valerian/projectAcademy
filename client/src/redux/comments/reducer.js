@@ -23,8 +23,6 @@ export const commentSlice = createSlice({
       const commentIndex = state.comments.findIndex(
         (comment) => comment._id === commentId
       );
-      console.log("IF", commentId);
-
       if (commentIndex !== -1) {
         state.comments[commentIndex].text = text;
       }
