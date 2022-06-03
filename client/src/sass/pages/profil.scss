@@ -1,0 +1,17 @@
+.profil{
+    min-height: calc(100vh - 260px);
+    @include flex-column-centered-row-center;
+    flex-wrap: wrap;
+    background-color: $main-dark;
+    opacity: 0.9;
+    color: white;
+    font-size: 1.5rem;
+    p {
+        padding: 1rem;
+    }
+
+    svg{
+        font-size: 5rem;
+    }
+    
+}

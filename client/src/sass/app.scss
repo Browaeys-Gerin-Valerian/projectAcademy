@@ -1,0 +1,30 @@
+//FORM COMPONENTS
+@import "./components/form/textarea.scss";
+@import "./components/form/formChecker.scss";
+@import "./components/form/input.scss";
+//MOVIE COMPONENTS
+@import "./components/movies/movieCard.scss";
+//LOGIN COMPONENTS
+@import "./components/login/login.scss";
+//COMMENTS COMPONENTS
+@import "./components/comments/commentList.scss";
+@import "./components/comments/commentDetail.scss";
+@import "./components/comments/addcomment.scss";
+//FAVORITES COMPONENTS
+@import "./components/favorites/favoriteStar.scss";
+@import "./components/favorites/favoriteDelete.scss";
+//PAGES
+@import "./pages/homepage.scss";
+@import "./pages/movieList.scss";
+@import "./pages/movieDetail.scss";
+@import "./pages/register.scss";
+@import "./pages/favoriteList.scss";
+@import "./pages/profil.scss";
+//LAYOUT
+@import "./layout/navbar/navbar.scss";
+@import "./layout/footer/footer.scss";
+@import "./layout/ui/snackbar.scss";
+@import "./layout/ui//modal.scss";
+@import "./layout/ui/button.scss";
+//GLOBALS
+@import "./base/reset.scss"

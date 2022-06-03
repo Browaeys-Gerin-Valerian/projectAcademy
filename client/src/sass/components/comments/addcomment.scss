@@ -1,0 +1,33 @@
+@import "../../abstracts/mixins.scss";
+
+.addComment {
+    @include flex-column-centered-row-start;
+    svg {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+    }
+
+
+    &__sendButton {
+        @include flex-row-centered-column-center;
+        background-color: inherit;
+        svg,
+        p {
+            color: $main-white;
+        }
+    }
+
+    &__disabledSend {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    &__enableSend {
+        opacity: 1;
+        cursor: pointer;
+    }
+}

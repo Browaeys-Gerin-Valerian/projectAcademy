@@ -1,0 +1,128 @@
+@import "../../base/animations.scss";
+@import "../../base/colors.scss";
+
+.button {
+    &__snackbar {
+        padding: 0.5rem 0.5rem;
+        font-size: 1.5rem;
+        font-weight: bold;
+        background-color: inherit;
+        outline: none;
+        transition: $fast-transition;
+
+
+        &:hover {
+            color: $main-white;
+        }
+    }
+
+    &__register {
+        padding: 1rem 3rem;
+        border-radius: 10px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        transition: $main-transition;
+
+        &:hover {
+            border-radius: 30px;
+            box-shadow: $second-shadow;
+
+        }
+
+        &__submit {
+            background-color: $main-blue;
+            color: $main-white;
+            box-shadow: $main-shadow;
+
+            &:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+
+            &:disabled:hover {
+                border-radius: 10px;
+            }
+
+
+        }
+
+        &__cancel {
+            background-color: inherit;
+            box-shadow: $main-shadow;
+
+
+        }
+    }
+
+    &__login {
+        padding: 0.7rem 1.8rem;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 2rem;
+        transition: $main-transition;
+        &:hover {
+            border-radius: 30px;
+            box-shadow: $second-shadow;
+        }
+        &__submit {
+            background-color: $main-blue;
+            color: $main-white;
+            box-shadow: $main-shadow;
+
+            &:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+
+            &:disabled:hover {
+                border-radius: 10px;
+            }
+
+
+        }
+
+        &__cancel {
+            background-color: inherit;
+            box-shadow: $main-shadow;
+
+
+        }
+    }
+
+    &__deleteFavorites {
+        padding: 0.7rem 1.8rem;
+        border-radius: 10px;
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin: 2rem;
+        transition: $main-transition;
+        &:hover {
+            border-radius: 30px;
+            box-shadow: $second-shadow;
+        }
+        &__submit {
+            background-color: $main-red;
+            color: $main-white;
+            box-shadow: $main-shadow;
+
+            &:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+
+            &:disabled:hover {
+                border-radius: 10px;
+            }
+
+
+        }
+
+        &__cancel {
+            background-color: inherit;
+            box-shadow: $main-shadow;
+
+
+        }
+    }
+}

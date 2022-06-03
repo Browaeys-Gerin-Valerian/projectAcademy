@@ -1,0 +1,46 @@
+@import "../../abstracts/mixins.scss";
+@import "../../base/colors.scss";
+
+.login {
+    position: relative;
+    background-color: $main-white;
+
+    &__inputContainer {
+        position: relative;
+        @include flex-column-centered-row-center;
+        width: 100%;
+    }
+
+    @include flex-column-centered-row-center;
+
+    &__buttonContainer {
+        @include flex-row-around-column-center;
+    }
+
+    &__error {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        font-size: 1.1rem;
+        color: $main-red;
+    }
+
+    &__login_alreadyAnAccount {
+        cursor: pointer;
+
+        a {
+            text-decoration: none;
+            color: $main-dark;
+        }
+    }
+
+    &__passwordIcon {
+        position: absolute;
+        top: 6.5rem;
+        right: 3.5rem;
+        cursor: pointer;
+
+        svg {
+            font-size: 2rem;
+        }
+    }
+}

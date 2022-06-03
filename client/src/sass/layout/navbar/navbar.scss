@@ -1,0 +1,158 @@
+@import "../../base/colors.scss";
+@import "../../base/animations.scss";
+
+.navigation {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 0rem;
+    background-color: $main-dark;
+}
+
+.logo {
+    text-decoration: none;
+    color: $main-red;
+    font-size: 2.5rem;
+    margin-left: 1rem;
+    font-weight: bold;
+}
+
+
+.navigation-menu {
+    margin-left: auto;
+    z-index: 2;
+
+    ul {
+        display: flex;
+        padding: 0;
+    }
+
+    li {
+        margin: 0 1rem;
+        font-size: 1rem;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        color: $main-white;
+        transition: $fast-transition;
+
+        &:hover {
+            color: $main-red
+        }
+    }
+
+    span {
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        color: $main-white;
+        transition: $fast-transition;
+        cursor: pointer;
+        &:hover {
+            color: $main-red
+        }
+    }
+}
+
+
+
+.hamburger {
+    border: 0;
+    height: 40px;
+    width: 40px;
+    padding: 0.5rem;
+    border-radius: 50%;
+    background-color: #283b8b;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+    display: none;
+    transition: $main-transition;
+
+    &:hover {
+        background-color: #2642af;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .navigation-menu {
+        ul {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation-menu {
+        ul {
+            position: absolute;
+            top: 60px;
+            left: 0;
+            flex-direction: column;
+            width: 100%;
+            background-color: $main-dark;
+            opacity: 0.90;
+            border-top: 1px solid black;
+        }
+
+        li {
+            text-align: center;
+            margin: 0;
+        }
+
+        a {
+            color: $main-white;
+            width: 100%;
+            padding: 1.5rem 0;
+            transition: $fast-transition;
+
+            &:hover {
+                color: $main-red;
+            }
+        }
+
+        span {
+            color: $main-white;
+            width: 100%;
+            padding: 1.5rem 0;
+            transition: $fast-transition;
+            cursor: pointer;
+            &:hover {
+                color: $main-red;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .navigation-menu ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation-menu.expanded ul {
+        display: block;
+    }
+}

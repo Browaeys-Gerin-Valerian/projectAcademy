@@ -1,0 +1,68 @@
+@import "../../abstracts/keysframes.scss";
+@import "../../base/colors.scss";
+@import "../../abstracts/mixins.scss";
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: $main-dark;
+    background-color: rgba(0, 0, 0, 0.4);
+
+
+    &__open {
+        display: block;
+    }
+
+
+
+    &__close {
+        display: none;
+
+    }
+
+    &__content {
+        @include flex-column-centered-row-center;
+        position: relative;
+        background-color: $main-white;
+        margin: auto;
+        margin-top: 20%;
+        padding: 30px;
+        border-radius: 10px;
+        width: 40%;
+        min-width: 380px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+
+    &__closeIcon {
+        position: absolute;
+        top: 0;
+        right: 0.75rem;
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+
+        &:hover {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+
+    &__body {
+        width: 80%;
+        padding: 2px 16px;
+
+    }
+
+    &__footer {
+        padding: 2px 16px;
+    }
+}

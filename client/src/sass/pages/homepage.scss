@@ -1,0 +1,104 @@
+@import "../base/colors.scss";
+@import "../abstracts/mixins.scss";
+
+.homepage {
+    &__backgroundCover {
+        width: 100%;
+        height: 1080px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    &__articles {
+        background-color: $main-dark;
+        color: $main-white;
+        @include flex-row-around-column-center;
+        border-top: 8px solid #222;
+        padding: 3rem 2rem;
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+        }
+
+    }
+
+    &__articles:last-child {
+        border-bottom: 8px solid #222;
+    }
+
+    &__text {
+        width: 40%;
+    }
+
+
+    &__mediaContainer {
+        position: relative;
+
+        img {
+            width: 400px;
+
+            height: auto;
+        }
+
+        video {
+            width: 500px;
+            height: 162px;
+            position: absolute;
+            top: 4rem;
+            left: -3.2rem;
+
+
+        }
+    }
+
+
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .homepage {
+        &__articles {
+            background-color: $main-dark;
+            color: $main-white;
+            @include flex-column-centered-row-center;
+            border-top: 8px solid #222;
+            padding: 5rem 1rem;
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+        &__text {
+            width: 70%;
+        }
+
+        &__mediaContainer {
+            position: relative;
+
+            video {
+                width: 500px;
+                height: 162px;
+                position: absolute;
+                top: 4rem;
+                left: -3.2rem;
+
+            }
+        }
+
+
+    }
+}

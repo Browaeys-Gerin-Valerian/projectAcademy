@@ -1,0 +1,84 @@
+@import "../../abstracts/mixins.scss";
+@import "../../base/colors.scss";
+@import "../../base/animations.scss";
+
+.commentDetail {
+    @include flex-column-centered-row-start;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: $main-white-shadow;
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+
+
+    a {
+        text-decoration: none;
+        color: $main-white;
+    }
+
+    &__userActions {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+
+        svg {
+            font-size: 1.5rem;
+            margin: 0.4rem;
+            cursor: pointer;
+            transition: $fast-transition;
+
+            &:hover {
+                transform: scale(1.1)
+            }
+
+
+        }
+    }
+
+    &__postedDate {
+        padding-bottom: 0.5rem;
+    }
+
+    &__userProfil {
+        @include flex-row-centered-column-center;
+
+        svg {
+            padding-right: 0.5rem;
+            font-size: 1.7rem;
+        }
+    }
+
+    &__text {
+        padding: 1rem;
+    }
+
+    &__editingContainer {
+        @include flex-column-centered-row-start;
+        margin: 0.5rem
+
+    }
+
+    &__sendButton {
+        @include flex-row-centered-column-center;
+        background-color: inherit;
+
+        svg,
+        p {
+            color: $main-white;
+            font-size: 1.2rem;
+            margin: 1rem 0.5rem 0 0;
+        }
+    }
+
+    &__disabledSend {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+
+    &__enableSend {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+}

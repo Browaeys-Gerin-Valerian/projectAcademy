@@ -1,0 +1,14 @@
+@import "../../abstracts/mixins.scss";
+@import "../../base/colors.scss";
+
+.favoriteDelete{
+    @include flex-column-centered-row-center;
+    &__buttonContainer{
+        @include flex-row-evenly-column-center;
+        padding-top: 2rem;
+        width: 80%;
+    }
+    &__confirmText{
+        text-align: center;
+    }
+}

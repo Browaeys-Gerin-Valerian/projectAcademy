@@ -1,0 +1,53 @@
+@import "../../base/colors.scss";
+@import "../../abstracts/mixins.scss";
+@import "../../base/animations.scss";
+
+.movieCard {
+    position: relative;
+    background-color: $main-white;
+    padding: 2rem;
+    margin: 2rem;
+    width: 450px;
+    height: 550px;
+    overflow: hidden;
+    @include flex-column-centered-row-center;
+    border-radius: 10% 0 10% 10%;
+    transition: $main-transition;
+    cursor: pointer;
+    a{
+        text-decoration: none;
+        color: $main-dark;
+    }
+
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    &__imgContainer {
+        height: 400px;
+        padding: 0.2rem;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+
+    &__infos {
+        padding: 1rem 0;
+        text-align: center;
+        overflow: hidden;
+        @include flex-column-centered-row-center;
+        width: 70%;
+    }
+
+    &__detail {
+        text-decoration: none;
+        color: $main-dark;
+
+
+    }
+
+}

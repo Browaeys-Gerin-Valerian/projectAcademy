@@ -1,0 +1,27 @@
+@import "../abstracts/mixins.scss";
+@import "../base/colors.scss";
+
+.favoriteList {
+    min-height: calc(100vh - 260px);
+    @include flex-row-centered-column-center;
+    flex-wrap: wrap;
+    background-color: $main-dark;
+    opacity: 0.9;
+    position: relative;
+    padding: 4rem 0;
+
+    &__noContent {
+        color: $main-white;
+        width: 60%;
+        text-align: center;
+    }
+
+    &__deleteAll {
+        position: absolute;
+        top: 2%;
+        right: 2%;
+        color: $main-white;
+        font-size: 2.5rem;
+        cursor: pointer;
+    }
+}
