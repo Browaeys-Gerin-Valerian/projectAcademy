@@ -11,7 +11,7 @@ const USER_MODEL = new Schema(
     lastname: String,
     email: {type:String, required:true, unique:true},
     password: {type:String, required:true},
-    favorites: [{ type: Schema.Types.ObjectId , ref: "MOVIE" }],
+    favorites: [{ type: Schema.Types.ObjectId , ref: "movies" }],
   },
   { timestamps: true }
 );
