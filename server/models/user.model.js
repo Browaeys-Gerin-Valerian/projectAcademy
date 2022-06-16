@@ -7,11 +7,11 @@ const { hash, compare } = bcrypt;
 
 const USER_MODEL = new Schema(
   {
-    firstname: {type:String, required:true},
+    firstname: { type: String, required: true },
     lastname: String,
-    email: {type:String, required:true, unique:true},
-    password: {type:String, required:true},
-    favorites: [{ type: Schema.Types.ObjectId , ref: "movies" }],
+    email: { type: String, required: true, unique: true },
+    password: { type: String, required: true },
+    favorites: [{ type: Schema.Types.ObjectId, ref: "movies" }],
   },
   { timestamps: true }
 );
