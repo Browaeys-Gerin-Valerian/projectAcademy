@@ -1,14 +1,14 @@
-@import "../../base/colors.scss";
-
-.favoriteStar{
+.favoriteStar {
     position: absolute;
     top: 0.5%;
     right: 0.5%;
     font-size: 2.5rem;
-    &__active{
+
+    &__active {
         color: $main-blue
     }
-    &__idle{
+
+    &__idle {
         color: $main-dark;
     }
 }

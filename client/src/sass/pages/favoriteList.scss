@@ -1,6 +1,3 @@
-@import "../abstracts/mixins.scss";
-@import "../base/colors.scss";
-
 .favoriteList {
     min-height: calc(100vh - 260px);
     @include flex-row-centered-column-center;

@@ -1,3 +1,14 @@
+//GLOBALS
+@import "./base/reset.scss";
+@import "./base/colors.scss";
+@import './base/animations.scss';
+
+//ABSTRACT
+@import "./abstracts/keysframes.scss";
+@import "./abstracts/mixins.scss";
+
+
+
 //FORM COMPONENTS
 @import "./components/form/textarea.scss";
 @import "./components/form/formChecker.scss";
@@ -26,5 +37,3 @@
 @import "./layout/ui/snackbar.scss";
 @import "./layout/ui//modal.scss";
 @import "./layout/ui/button.scss";
-//GLOBALS
-@import "./base/reset.scss"

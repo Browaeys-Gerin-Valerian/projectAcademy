@@ -1,6 +1,3 @@
-@import "../abstracts/mixins.scss";
-@import "../base/colors.scss";
-
 .movieList {
     @include flex-row-centered-column-center;
     flex-wrap: wrap;

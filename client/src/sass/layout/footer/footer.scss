@@ -1,15 +1,12 @@
-@import "../../base/colors.scss";
-@import "../../abstracts/mixins.scss";
-
-
-.footer{
+.footer {
     @include flex-row-evenly-column-center;
     flex-wrap: wrap;
     background-color: $main-dark;
     color: $main-white;
     padding: 3rem 0 2rem 0;
     font-size: 1.2rem;
-    ul{
+
+    ul {
         padding: 1rem;
     }
 }
